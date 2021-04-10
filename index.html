@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <title>Minsung's Journal</title>
+        <meta charset="UTF-8"/>
+        <meta name="Description" content="Minsung's journal for three days" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+        <header>
+            <h1>Minsung's Journal</h1>
+            <img controls width="250" src="image.jpg">
+            <hr>
+            <details>
+                <summary>Journal Entries</summary>
+                <nav>
+                    <ul>
+                        <li><a href="#day1"><span class="days">Day1</span></a></li>
+                        <li><a href="#day2"><span class="days">Day2</span></a></li>
+                        <li><a href="#day3"><span class="days">Day3</span></a></li>
+                    </ul>
+                </nav>
+            </details>
+        </header>
+        <main>
+            <section>
+                <h2 id="day1">Day 1</h2>
+                <h3><i class="date">Monday, April 5, 2021</i></h3>
+                <hr>
+                <h3>List of Classes</h3>
+                <ol>
+                    <li><b class="Class">CAT 125 Lecture (10-10:50AM)</b></li>
+                    <li><b class="Class">MGT 181 Lecture (11-12:20AM)</b></li>
+                    <li><b class="Class">CAT 125 Discussion (2-2:50PM)</b></li>
+                    <li><b class="Class">CSE 110 Discussion (4-4:50PM)</b></li>
+                </ol>
+                <p>
+                    On, <em>Monday, April 5, 2021</em>, I woke up at 9:55AM meaning I had <strong>only 5 minutes</strong> to start up my PC and go to my first class of the day. After my CAT 125 Lecture, I had MGT 181 lecture right afterwards. After that, I went back to bed and took a nap until my CAT 125 discussion. Afterwards, I ate some food and then went to my CSE 110 Discussion.
+                </p>
+                <hr>
+            </section>
+
+            <section>
+                <h2 id="day2">Day 2</h2>
+                <h3><i class="date">Tuesday, April 6, 2021</i></h3>
+                <hr>
+                <h3>List of Classes</h3>
+                <ol>
+                    <li><b class="Class">CSE 101 Lecture (9:30-10:50AM)</b></li>
+                    <li><b class="Class">CSE 110 Lecture (4-5:20PM)</b></li>
+                </ol>
+                <p>
+                    On, <em>Tuesday, April 6, 2021</em>, I woke up at 9:25AM meaning I had <strong>only 5 minutes</strong> to start up my PC and go to my first class of the day. After my CSE 101 Lecture, I had a lot of time left over. I watched some videos and listened to some music until my last class of the day at 4PM.
+                    <br>
+                    <br>
+                    Some of the videos and music I enjoyed are below:
+                    <br>
+                    Music:
+                    <br>
+                    <audio controls src="audio.mp3"></audio>
+                    <br>
+                    Video:
+                    <br>
+                    <video controls width="250">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                    <br>
+                </p>
+                <hr>
+            </section>
+
+            <section>
+                <h2 id="day3">Day 3</h2>
+                <h3><i class="date">Wednesday, April 7, 2021</i></h3>
+                <hr>
+                <h3>List of Classes</h3>
+                <ol>
+                    <li><b class="Class">CAT 125 Lecture (10-10:50AM)</b></li>
+                    <li><b class="Class">MGT 181 Lecture (11-12:20AM)</b></li>
+                    <li><b class="Class">CAT 125 Discussion (2-2:50PM)</b></li>
+                    <li><b class="Class">CSE 110 Lab (3-5:50PM)</b></li>
+                </ol>
+                <p>
+                    On, <em>Wednesday, April 7, 2021</em>, I woke up at 9:55AM meaning I had <strong>only 5 minutes</strong> to start up my PC and go to my first class of the day. After my CAT 125 Lecture, I had MGT 181 lecture right afterwards. After that, I went back to bed and took a nap until my CAT 125 discussion. Afterwards, I ate some food and then started working on my Lab.
+                </p>
+                <hr>
+            </section>
+        </main>
+        <footer>
+            <form>
+                <p>Survey:</p>
+                <label for="name">Name (4 to 8 characters):</label>
+                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <fieldset>
+                    <legend>Which day was your favorite?</legend>
+                    <div>
+                        <input type="radio" id="Day1" name="date" value="1">
+                        <label for="Day1">Day 1</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Day2" name="date" value="2">
+                        <label for="Day2">Day 2</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Day3" name="date" value="3">
+                        <label for="Day3">Day 3</label>
+                    </div>
+                </fieldset>    
+                <p>Which day(s) would you like to hear more about?:</p>
+                <div>
+                    <input type="checkbox" id="Day1" name="Day1">
+                    <label for="Day1">Day 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Day2" name="Day2">
+                    <label for="Day2">Day 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Day3" name="Day3">
+                    <label for="Day3">Day 3</label>
+                </div>
+                <div>
+                    <label for="day-choice">Choose your favorite day of the week:</label>
+                    <input list="days" id="day-choice" name="day-choice" />
+                    <datalist id="days">
+                        <option value="Monday">
+                        <option value="Tuesday">
+                        <option value="Wednesday">
+                        <option value="Thursday">
+                        <option value="Friday">
+                        <option value="Saturday">
+                        <option value="Sunday">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="day-select">Which day would you like to hear about next:</label>
+                    <select name="days" id="day-select">
+                        <option value="">--Please choose an option--<option>
+                        <option value="4">Day 4</option>
+                        <option value="5">Day 5</option>
+                        <option value="6">Day 6</option>
+                        <option value="7">Day 7</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="suggestion">Tell us your suggestions:</label>
+                </div>
+                <div>
+                    <textarea id="suggestion" name="suggestion" rows="5" cols="33"></textarea>
+                </div>
+                <button>Submit</button>
+            </form>
+        </footer>
+    </body>
+</html>
