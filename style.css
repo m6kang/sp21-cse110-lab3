@@ -1,4 +1,77 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: auto;
+}
 h1 {
     background-color: black;
     color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: pink;
+    border-radius: 1cm;
+    position: fixed;
+}
+.Class {
+    background-color: pink;
+}
+#day1 {
+    padding-top: 1mm;
+}
+li[class = "days"] {
+    padding: 1em;
+}
+p::first-line {
+    margin-left: 1ex;
+}
+h2, h3 {
+    margin: 1ch;
+}
+button:hover {
+    color: #0FF;
+}
+button:active {
+    color: hsl(50, 10, 20);
+}
+ol li {
+    text-decoration: underline black;
+}
+ul > li {
+    text-align: center;
+}
+h1 + img {
+    display: block;
+}
+h3 ~ ol {
+    display: inline-block;
+}
+video.days {
+    position: static;
+}
+fieldset {
+    display: grid;
+}
+fieldset > #Day1 {
+    align-self: start;
+}
+fieldset > #Day2 {
+    justify-self: center;
+}
+fieldset > #Day3 {
+    place-self: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+p {
+    color: black
+}
+@media (color) {
+    p {
+        color: red;
+    }
 }
